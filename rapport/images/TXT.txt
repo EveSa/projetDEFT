@@ -1,0 +1,215 @@
+Testing for balanced_upsample setting 
+
+✔ getting data
+⠦ training logisticRegression/home/eve/Documents/MasterTAL/Semestre3/ApprentissageArtificiel/projet/.venv/lib/python3.8/site-packages/sklearn/linear_model/_logistic.py:444: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+✔ training logisticRegression
+data reviewed in : 22.348928451538086 sec
+              precision    recall  f1-score   support
+
+        eldr       0.72      0.69      0.70      4571
+     gue-ngl       0.77      0.79      0.78      4571
+      ppe-de       0.58      0.60      0.59      4571
+         pse       0.58      0.56      0.57      4571
+   verts-ale       0.68      0.70      0.69      4571
+
+    accuracy                           0.67     22855
+   macro avg       0.67      0.67      0.67     22855
+weighted avg       0.67      0.67      0.67     22855
+
+(.venv) eve@eve-HP-EliteBook-x360-1030-G2:~/Documents/MasterTAL/Semestre3/ApprentissageArtificiel/projet$ bin/main.py 
+Testing for  setting 
+
+✔ getting data
+✔ using pre dumped model ... 
+tree depth : [100]
+data reviewed in : 0.01911187171936035 sec
+              precision    recall  f1-score   support
+
+        eldr       0.88      0.26      0.40      1339
+     gue-ngl       0.82      0.65      0.72      1793
+      ppe-de       0.61      0.85      0.71      4571
+         pse       0.61      0.65      0.63      3627
+   verts-ale       0.77      0.36      0.49      1585
+
+    accuracy                           0.65     12915
+   macro avg       0.74      0.56      0.59     12915
+weighted avg       0.68      0.65      0.63     12915
+
+(.venv) eve@eve-HP-EliteBook-x360-1030-G2:~/Documents/MasterTAL/Semestre3/ApprentissageArtificiel/projet$ bin/main.py 
+Testing for balanced_downsampled setting 
+
+✔ getting data
+✔ training logisticRegression
+nb of iterations : [100]
+data reviewed in : 8.642356157302856 sec
+              precision    recall  f1-score   support
+
+        eldr       0.59      0.58      0.59      1339
+     gue-ngl       0.67      0.73      0.70      1339
+      ppe-de       0.49      0.48      0.48      1339
+         pse       0.46      0.44      0.45      1339
+   verts-ale       0.55      0.55      0.55      1339
+
+    accuracy                           0.56      6695
+   macro avg       0.55      0.56      0.55      6695
+weighted avg       0.55      0.56      0.55      6695
+
+Testing for lemmatizedBalanced_upsampled setting 
+
+✔ getting data
+⠼ training logisticRegression/home/eve/Documents/MasterTAL/Semestre3/ApprentissageArtificiel/projet/.venv/lib/python3.8/site-packages/sklearn/linear_model/_logistic.py:444: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+✔ training logisticRegression
+nb of iterations : [200]
+data reviewed in : 33.174503803253174 sec
+              precision    recall  f1-score   support
+
+        eldr       0.67      0.66      0.67      4571
+     gue-ngl       0.75      0.78      0.77      4571
+      ppe-de       0.55      0.57      0.56      4571
+         pse       0.54      0.51      0.52      4571
+   verts-ale       0.66      0.66      0.66      4571
+
+    accuracy                           0.64     22855
+   macro avg       0.63      0.64      0.63     22855
+weighted avg       0.63      0.64      0.63     22855
+
+(.venv) eve@eve-HP-EliteBook-x360-1030-G2:~/Documents/MasterTAL/Semestre3/ApprentissageArtificiel/projet$ bin/main.py 
+Testing for wthtPunctLemmatizedBalanced_upsampled setting 
+
+✔ getting data
+⠦ training logisticRegression/home/eve/Documents/MasterTAL/Semestre3/ApprentissageArtificiel/projet/.venv/lib/python3.8/site-packages/sklearn/linear_model/_logistic.py:444: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+✔ training logisticRegression
+nb of iterations : [200]
+data reviewed in : 32.344526290893555 sec
+              precision    recall  f1-score   support
+
+        eldr       0.66      0.66      0.66      4571
+     gue-ngl       0.76      0.77      0.76      4571
+      ppe-de       0.55      0.56      0.55      4571
+         pse       0.53      0.51      0.52      4571
+   verts-ale       0.65      0.66      0.66      4571
+
+    accuracy                           0.63     22855
+   macro avg       0.63      0.63      0.63     22855
+weighted avg       0.63      0.63      0.63     22855
+
+(.venv) eve@eve-HP-EliteBook-x360-1030-G2:~/Documents/MasterTAL/Semestre3/ApprentissageArtificiel/projet$ bin/main.py 
+Testing for wthtPunctLemmatized setting 
+
+✔ getting data
+✔ training logisticRegression
+nb of iterations : [197]
+data reviewed in : 22.880077838897705 sec
+              precision    recall  f1-score   support
+
+        eldr       0.78      0.23      0.35      1339
+     gue-ngl       0.78      0.61      0.69      1793
+      ppe-de       0.58      0.82      0.68      4571
+         pse       0.56      0.61      0.58      3627
+   verts-ale       0.71      0.32      0.44      1585
+
+    accuracy                           0.61     12915
+   macro avg       0.68      0.52      0.55     12915
+weighted avg       0.64      0.61      0.59     12915
+
+
+Testing for wthtdepth setting 
+
+✔ getting data
+✔ training randomForest
+trees depths : [291, 280, 295, 334, 282, 318, 336, 239, 279, 272, 314, 310, 266, 270, 239, 311, 224, 240, 290, 315, 288, 284, 307, 342, 258, 336, 264, 354, 299, 322, 274, 246, 292, 313, 298, 337, 357, 277, 320, 263, 293, 285, 278, 274, 271, 308, 278, 291, 294, 298, 275, 331, 330, 246, 294, 335, 260, 327, 324, 259, 273, 259, 312, 280, 304, 289, 294, 238, 280, 272, 299, 325, 278, 257, 255, 310, 317, 328, 272, 274, 322, 281, 249, 264, 299, 277, 286, 328, 267, 281, 285, 342, 335, 298, 341, 352, 230, 325, 253, 288]
+data reviewed in : 67.06801390647888 sec
+              precision    recall  f1-score   support
+
+        eldr       1.00      0.61      0.76      1339
+     gue-ngl       0.97      0.71      0.82      1793
+      ppe-de       0.64      0.95      0.76      4571
+         pse       0.83      0.69      0.75      3627
+   verts-ale       1.00      0.61      0.76      1585
+
+    accuracy                           0.77     12915
+   macro avg       0.89      0.71      0.77     12915
+weighted avg       0.82      0.77      0.77     12915
+
+
+Testing for wthtdepthlemmatized setting 
+
+✔ getting data
+✔ training randomForest
+trees depths : [319, 338, 361, 307, 362, 356, 285, 307, 341, 312, 332, 341, 353, 313, 338, 338, 314, 356, 360, 322, 309, 276, 351, 323, 372, 301, 340, 352, 327, 377, 350, 268, 321, 314, 366, 343, 402, 318, 350, 336, 383, 388, 298, 340, 340, 306, 309, 309, 339, 304, 319, 290, 336, 389, 327, 339, 323, 324, 307, 289, 286, 368, 332, 266, 294, 348, 387, 394, 291, 305, 275, 284, 313, 325, 338, 293, 307, 319, 365, 323, 356, 324, 364, 394, 308, 349, 345, 348, 356, 351, 324, 290, 384, 270, 306, 323, 364, 391, 327, 309]
+mean depth : 331.06
+data reviewed in : 94.12283134460449 sec
+              precision    recall  f1-score   support
+
+        eldr       0.99      0.61      0.76      1339
+     gue-ngl       0.98      0.70      0.82      1793
+      ppe-de       0.65      0.95      0.77      4571
+         pse       0.81      0.70      0.75      3627
+   verts-ale       1.00      0.61      0.76      1585
+
+    accuracy                           0.77     12915
+   macro avg       0.88      0.72      0.77     12915
+weighted avg       0.82      0.77      0.77     12915
+
+(.venv) eve@eve-HP-EliteBook-x360-1030-G2:~/Documents/MasterTAL/Semestre3/ApprentissageArtificiel/projet$ bin/main.py 
+Testing for wthtdepthwthtPunctlemmatized setting 
+
+✔ getting data
+✔ training randomForest
+trees depths : [358, 351, 281, 292, 347, 349, 263, 332, 294, 305, 320, 310, 298, 359, 369, 330, 375, 342, 293, 303, 359, 350, 307, 291, 320, 245, 355, 300, 274, 280, 342, 274, 352, 426, 346, 330, 379, 344, 335, 335, 337, 439, 306, 359, 339, 324, 345, 309, 282, 298, 264, 347, 329, 334, 308, 291, 380, 287, 322, 325, 286, 363, 414, 333, 341, 344, 343, 342, 343, 391, 322, 336, 302, 304, 408, 340, 308, 333, 375, 280, 387, 301, 331, 312, 331, 337, 294, 352, 331, 356, 371, 333, 299, 386, 298, 347, 311, 366, 334, 347]
+mean depth : 330.72
+data reviewed in : 62.73609113693237 sec
+              precision    recall  f1-score   support
+
+        eldr       1.00      0.61      0.76      1339
+     gue-ngl       0.97      0.70      0.81      1793
+      ppe-de       0.64      0.95      0.76      4571
+         pse       0.82      0.69      0.75      3627
+   verts-ale       1.00      0.61      0.76      1585
+
+    accuracy                           0.76     12915
+   macro avg       0.88      0.71      0.77     12915
+weighted avg       0.82      0.76      0.76     12915
+
+Testing for best_estimator setting 
+
+✔ getting data
+✔ training SVCClassifier
+best params : {'C': 1}
+nb of features : 54596
+nb of iterations : 46
+data reviewed in : 93.46481680870056 sec
+              precision    recall  f1-score   support
+
+        eldr       0.83      0.66      0.74      1339
+     gue-ngl       0.84      0.82      0.83      1793
+      ppe-de       0.76      0.84      0.80      4571
+         pse       0.74      0.76      0.75      3627
+   verts-ale       0.81      0.69      0.74      1585
+
+    accuracy                           0.78     12915
+   macro avg       0.80      0.75      0.77     12915
+weighted avg       0.78      0.78      0.78     12915
+
+

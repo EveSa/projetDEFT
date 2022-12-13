@@ -1,0 +1,17 @@
+\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section.2}{Traitement des donn\351es}{}% 2
+\BOOKMARK [1][-]{section.3}{R\351sultats}{}% 3
+\BOOKMARK [2][-]{subsection.3.1}{Arbres de d\351cisions}{section.3}% 4
+\BOOKMARK [3][-]{subsubsection.3.1.1}{lemmatisation et suppression des mots stops}{subsection.3.1}% 5
+\BOOKMARK [3][-]{subsubsection.3.1.2}{R\351equilibrage des donn\351es}{subsection.3.1}% 6
+\BOOKMARK [2][-]{subsection.3.2}{Random Forest}{section.3}% 7
+\BOOKMARK [2][-]{subsection.3.3}{LinearSVC}{section.3}% 8
+\BOOKMARK [1][-]{section.4}{Document Body}{}% 9
+\BOOKMARK [2][-]{subsection.4.1}{Footnotes}{section.4}% 10
+\BOOKMARK [2][-]{subsection.4.2}{Tables and figures}{section.4}% 11
+\BOOKMARK [2][-]{subsection.4.3}{Hyperlinks}{section.4}% 12
+\BOOKMARK [2][-]{subsection.4.4}{Citations}{section.4}% 13
+\BOOKMARK [2][-]{subsection.4.5}{References}{section.4}% 14
+\BOOKMARK [2][-]{subsection.4.6}{Appendices}{section.4}% 15
+\BOOKMARK [1][-]{section.5}{BibTeX Files}{}% 16
+\BOOKMARK [1][-]{appendix.A}{Example Appendix}{}% 17
