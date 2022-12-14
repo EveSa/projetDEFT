@@ -7,6 +7,27 @@ from yaspin import yaspin
 
 from adapt_data import*
 
+'''Tous les modèles prennent comme paramètres :
+
+    Entrées
+    -------
+    name : le nom de la sauvegarde
+    lang : la langue d'entraînement du modèle
+    X_train : les données d'entraînement
+    y_train : les targets d'entraînement
+    X_test : les données de test
+    
+    Sortie
+    ------
+    y_pred : les targets prédits pour les X_test
+    classes : les classes utilisées
+
+    Tous les imports sont faits à l'intérieur des fonctions pour ne pas surcharger l'appel de ce module.
+    Toutes les fonctions sont définies selon le même principe :
+        on vérifie d'abord que le modèle n'a pas déjà été entraîné
+        on entraîne un nouveau modèle si besoin
+    '''
+
 def decision_tree(name, lang, X_train, y_train, X_test, max_depth=None):
     from sklearn import tree
     '''
@@ -71,7 +92,7 @@ def logistic_regression(name, lang, X_train, y_train, X_test):
         clf = load(filename)
     else :
         with yaspin(text="training logisticRegression") as sp:
-            clf = LogisticRegression(random_state=0, max_iter=200)
+            clf = LogisticRegression(random_state=0)
             clf.fit(X_train, y_train)
             dump(clf, filename)
             sp.ok('✔')
@@ -125,7 +146,7 @@ def svc_classification(name, lang, X_train, y_train, X_test):
             clf = GridSearchCV(svc, parameters)
             clf.fit(X_train, y_train)
             clf_best=clf.best_estimator_
-            #dump(clf_best, filename)
+            dump(clf_best, filename)
             sp.ok('✔')
             print("best params : "+str(clf.best_params_))
             print("nb of features : " +str(clf.n_features_in_))
@@ -148,16 +169,22 @@ def SGD_classification(name, lang, X_train, y_train, X_test):
     filename = 'model/SGDClassifier/'+name+'_' + lang +'.joblib'
     if path.exists(filename):
         print("✔ using pre dumped model ... ")
-        clf = load(filename)
+        clf_best = load(filename)
     else :
         with yaspin(text="training SGD") as sp:
-            parameters = {'loss':['modified_huber'], 'class_weight':[{'eldr':7.5, 'gue-ngl':5, 'ppe-de':2.5, 'pse':2, 'verts-ale':5}], 'epsilon':[0.3 ], 'warm_start':[True]}
+            parameters = {
+                'loss':['modified_huber'], 
+                'class_weight':[{'eldr':7.5, 'gue-ngl':5, 'ppe-de':2.5, 'pse':2, 'verts-ale':5}], 
+                'epsilon':[0.3 ], 
+                'warm_start':[True]
+                }
+
             scoring='f1_macro'
             sdg = SGDClassifier()
             clf = GridSearchCV(sdg, parameters, scoring=scoring)
             clf.fit(X_train, y_train)
             clf_best=clf.best_estimator_
-            #dump(clf_best, filename)
+            dump(clf_best, filename)
             sp.ok('✔')
             print("best params : "+str(clf.best_params_))
             print("nb of features : " +str(clf.n_features_in_))
@@ -173,6 +200,10 @@ def SGD_classification(name, lang, X_train, y_train, X_test):
     return y_pred, classes
 
 def bert_classifn(name, lang, X_train, y_train, X_test):
+    '''
+    Essai d'entraînement avec BERT
+    Tentative avortée
+    '''
     import torch
     from transformers import CamembertTokenizer, CamembertForSequenceClassification
     from torch.utils.data import DataLoader, RandomSampler, SequentialSampler
@@ -182,11 +213,13 @@ def bert_classifn(name, lang, X_train, y_train, X_test):
     model = CamembertForSequenceClassification.from_pretrained("cardiffnlp/twitter-roberta-base-emotion")
 
 
-    possible_labels= ['Verts-ALE',
-    'PPE-DE',
-    'PSE',
-    'ELDR',
-    'GUE-NGL']
+    possible_labels= [
+        'Verts-ALE',
+        'PPE-DE',
+        'PSE',
+        'ELDR',
+        'GUE-NGL'
+        ]
     label_dict = {}
     for index, possible_label in enumerate(possible_labels):
         label_dict[possible_label] = index

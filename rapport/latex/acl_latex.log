@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.11.10)  13 DEC 2022 12:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.11.10)  14 DEC 2022 11:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -282,49 +282,50 @@ Package graphics Info: Driver file: pdftex.def on input line 105.
 \Gin@req@height=\dimen155
 \Gin@req@width=\dimen156
 )
+(/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
+Package: multirow 2019/05/31 v2.5 Span multiple rows of a table
+\multirow@colwidth=\skip54
+\multirow@cntb=\count194
+\multirow@dima=\skip55
+\bigstrutjot=\dimen157
+)
 (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
 File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
-\l__kernel_color_stack_int=\count194
+\l__kernel_color_stack_int=\count195
 \l__pdf_internal_box=\box45
 )
-(./acl_latex.aux
-
-LaTeX Warning: Label `tab:accents' multiply defined.
-
-
-LaTeX Warning: Label `tab:accents' multiply defined.
-
-)
+(./acl_latex.aux)
 \openout1 = `acl_latex.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
- (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count195
-\scratchdimen=\dimen157
+\scratchcounter=\count196
+\scratchdimen=\dimen158
 \scratchbox=\box46
-\nofMPsegments=\count196
-\nofMParguments=\count197
+\nofMPsegments=\count197
+\nofMParguments=\count198
 \everyMPshowfont=\toks19
-\MPscratchCnt=\count198
-\MPscratchDim=\dimen158
-\MPnumerator=\count199
-\makeMPintoPDFobject=\count266
+\MPscratchCnt=\count199
+\MPscratchDim=\dimen159
+\MPnumerator=\count266
+\makeMPintoPDFobject=\count267
 \everyMPtoPDFconversion=\toks20
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -373,7 +374,7 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \AtBeginShipoutBox=\box47
-Package hyperref Info: Link coloring ON on input line 59.
+Package hyperref Info: Link coloring ON on input line 60.
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
 
@@ -383,24 +384,24 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 (/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count267
+\c@section@level=\count268
 )
-LaTeX Info: Redefining \ref on input line 59.
-LaTeX Info: Redefining \pageref on input line 59.
-LaTeX Info: Redefining \nameref on input line 59.
+LaTeX Info: Redefining \ref on input line 60.
+LaTeX Info: Redefining \pageref on input line 60.
+LaTeX Info: Redefining \nameref on input line 60.
 
 (./acl_latex.out) (./acl_latex.out)
 \@outlinefile=\write3
 \openout3 = `acl_latex.out'.
 
-LaTeX Info: Redefining \microtypecontext on input line 59.
+LaTeX Info: Redefining \microtypecontext on input line 60.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `basictext'.
-LaTeX Info: Redefining \showhyphens on input line 59.
+LaTeX Info: Redefining \showhyphens on input line 60.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -413,18 +414,18 @@ File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman
 (RS)
 )
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 60.
+(Font)              <12> on input line 61.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 60.
+(Font)              <8> on input line 61.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 60.
-LaTeX Font Info:    Trying to load font information for U+lasy on input line 60
+(Font)              <6> on input line 61.
+LaTeX Font Info:    Trying to load font information for U+lasy on input line 61
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-LaTeX Font Info:    Trying to load font information for T1+pcr on input line 60
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 61
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd
@@ -434,48 +435,11 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `pcr' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-
-Underfull \hbox (badness 1097) in paragraph at lines 75--76
-\T1/ptm/m/n/10.95 (+20) for-mat xml ce qui per-met de récupérer aise-
- []
-
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 90.
+(Font)              <10.95> on input line 80.
 
-Overfull \hbox (27.0945pt too wide) in paragraph at lines 90--105
- [][] 
- []
-
-<../images/decision_tree.png, id=68, 1806.75pt x 1445.4pt>
-File: ../images/decision_tree.png Graphic file (type png)
-<use ../images/decision_tree.png>
-Package pdftex.def Info: ../images/decision_tree.png  used on input line 110.
-(pdftex.def)             Requested size: 227.62206pt x 182.08607pt.
-
-Overfull \hbox (8.53592pt too wide) in paragraph at lines 110--111
-[][] 
- []
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<../images/MatriceConfusionTree.png, id=70, 462.528pt x 346.896pt>
-File: ../images/MatriceConfusionTree.png Graphic file (type png)
-<use ../images/MatriceConfusionTree.png>
-Package pdftex.def Info: ../images/MatriceConfusionTree.png  used on input line
- 116.
-(pdftex.def)             Requested size: 227.62206pt x 170.71628pt.
-
-Overfull \hbox (8.53592pt too wide) in paragraph at lines 116--117
-[][] 
- []
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Underfull \hbox (badness 1968) in paragraph at lines 122--123
-\T1/ptm/m/n/10.95 (+20) donné la dif-fi-culté de la tâche et les ré-sul-
+Underfull \hbox (badness 1097) in paragraph at lines 110--111
+\T1/ptm/m/n/10.95 (+20) for-mat xml ce qui per-met de récupérer aise-
  []
 
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
@@ -483,134 +447,128 @@ Underfull \hbox (badness 1968) in paragraph at lines 122--123
 
 
 ]
-<../images/matriceConfusionTreeBalanced.png, id=87, 462.528pt x 346.896pt>
-File: ../images/matriceConfusionTreeBalanced.png Graphic file (type png)
-<use ../images/matriceConfusionTreeBalanced.png>
-Package pdftex.def Info: ../images/matriceConfusionTreeBalanced.png  used on in
-put line 130.
-(pdftex.def)             Requested size: 227.62206pt x 170.71628pt.
+<../images/decision_tree.png, id=56, 1806.75pt x 1445.4pt>
+File: ../images/decision_tree.png Graphic file (type png)
+<use ../images/decision_tree.png>
+Package pdftex.def Info: ../images/decision_tree.png  used on input line 146.
+(pdftex.def)             Requested size: 227.62206pt x 182.08607pt.
 
-Overfull \hbox (8.53592pt too wide) in paragraph at lines 130--131
+Overfull \hbox (8.53592pt too wide) in paragraph at lines 146--147
 [][] 
- []
-
-
-Underfull \hbox (badness 1371) in paragraph at lines 139--140
-\T1/ptm/m/n/10.95 (+20) Face à ces ré-sul-tats peu fructueux, nous es-
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
+<../images/MatriceConfusionTree.png, id=58, 462.528pt x 346.896pt>
+File: ../images/MatriceConfusionTree.png Graphic file (type png)
+<use ../images/MatriceConfusionTree.png>
+Package pdftex.def Info: ../images/MatriceConfusionTree.png  used on input line
+ 152.
+(pdftex.def)             Requested size: 227.62206pt x 170.71628pt.
 
-Underfull \hbox (badness 1189) in paragraph at lines 164--165
+Overfull \hbox (8.53592pt too wide) in paragraph at lines 152--153
+[][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[2 <../images/decision_tree.png> <../images/matriceConfusionTree.png>]
+<../images/matriceConfusionTreeBalanced.png, id=74, 462.528pt x 346.896pt>
+File: ../images/matriceConfusionTreeBalanced.png Graphic file (type png)
+<use ../images/matriceConfusionTreeBalanced.png>
+Package pdftex.def Info: ../images/matriceConfusionTreeBalanced.png  used on in
+put line 166.
+(pdftex.def)             Requested size: 227.62206pt x 170.71628pt.
+
+Overfull \hbox (8.53592pt too wide) in paragraph at lines 166--167
+[][] 
+ []
+
+
+Underfull \hbox (badness 1371) in paragraph at lines 175--176
+\T1/ptm/m/n/10.95 (+20) Face à ces ré-sul-tats peu fructueux, nous es-
+ []
+
+
+Underfull \hbox (badness 1189) in paragraph at lines 200--201
  [][] \T1/ptm/m/n/10.95 (+20) La f-mesure moyenne de ran-dom For-est
  []
 
-[2 <../images/decision_tree.png> <../images/matriceConfusionTree.png> <../image
-s/matriceConfusionTreeBalanced.png>]
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9> on input line 215.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 215.
 
-Underfull \hbox (badness 10000) in paragraph at lines 257--258
-[][][]\T1/pcr/m/n/10.95 \pdfendlink []ended up in
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[3 <../images/matriceConfusionTreeBalanced.png>]
+
+LaTeX Warning: Reference `tab:randomForestit' on page 4 undefined on input line
+ 240.
+
+<../images/matriceConfusionrandomforesten.png, id=93, 462.528pt x 346.896pt>
+File: ../images/matriceConfusionrandomforesten.png Graphic file (type png)
+<use ../images/matriceConfusionrandomforesten.png>
+Package pdftex.def Info: ../images/matriceConfusionrandomforesten.png  used on 
+input line 264.
+(pdftex.def)             Requested size: 227.62206pt x 170.71628pt.
+
+Overfull \hbox (8.53592pt too wide) in paragraph at lines 264--265
+[][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 257--258
-\T1/pcr/m/n/10.95 different nesting level
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<../images/matriceConfusionrandomForestit.png, id=94, 462.528pt x 346.896pt>
+File: ../images/matriceConfusionrandomForestit.png Graphic file (type png)
+<use ../images/matriceConfusionrandomForestit.png>
+Package pdftex.def Info: ../images/matriceConfusionrandomForestit.png  used on 
+input line 291.
+(pdftex.def)             Requested size: 227.62206pt x 170.71628pt.
+
+Overfull \hbox (8.53592pt too wide) in paragraph at lines 291--292
+[][] 
  []
 
 
-Package natbib Warning: Citation `Gusfield:97' on page 3 undefined on input lin
-e 269.
+LaTeX Warning: `h' float specifier changed to `ht'.
 
-
-Package natbib Warning: Citation `Gusfield:97' on page 3 undefined on input lin
-e 270.
-
-
-Package natbib Warning: Citation `Gusfield:97' on page 3 undefined on input lin
-e 271.
-
-
-Package natbib Warning: Citation `Gusfield:97' on page 3 undefined on input lin
-e 272.
-
-
-Package natbib Warning: Citation `Gusfield:97' on page 3 undefined on input lin
-e 284.
-
-
-Package natbib Warning: Citation `Gusfield:97' on page 3 undefined on input lin
-e 285.
-
-
-Package natbib Warning: Citation `Gusfield:97' on page 3 undefined on input lin
-e 286.
-
-
-Package natbib Warning: Citation `Ando2005' undefined on input line 290.
-
-
-Package natbib Warning: Citation `andrew2007scalable' undefined on input line 2
-90.
-
-
-Package natbib Warning: Citation `rasooli-tetrault-2015' undefined on input lin
-e 290.
-
-[3]
-Overfull \hbox (3.85567pt too wide) in paragraph at lines 305--305
- []\T1/pcr/m/n/10.95 \bibliography{anthology,custom}[] 
- []
-
-No file acl_latex.bbl.
-
-Package natbib Warning: There were undefined citations.
-
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 354.
-[4]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 354.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 300.
+[4 <../images/matriceConfusionrandomforesten.png> <../images/matriceConfusionra
+ndomForestit.png>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 300.
  (./acl_latex.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 354.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 354.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 300.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 300.
+Package rerunfilecheck Info: File `acl_latex.out' has not changed.
+(rerunfilecheck)             Checksum: B84D11FCBDFB6FC847E3101CCEE50240;611.
 
 
-Package rerunfilecheck Warning: File `acl_latex.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
+LaTeX Warning: There were undefined references.
 
-Package rerunfilecheck Info: Checksums for `acl_latex.out':
-(rerunfilecheck)             Before: 99CAE26EFF5735A7E571B9C4CA0450B6;993
-(rerunfilecheck)             After:  9A78D43410EEEC2425E3F4C8B119163F;1052.
 
-LaTeX Warning: There were multiply-defined labels.
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 354.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 300.
  ) 
 Here is how much of TeX's memory you used:
- 9645 strings out of 483140
- 151674 string characters out of 5965150
- 451444 words of memory out of 5000000
- 24345 multiletter control sequences out of 15000+600000
- 576074 words of font info for 147 fonts, out of 8000000 for 9000
+ 9649 strings out of 483140
+ 152275 string characters out of 5965150
+ 453208 words of memory out of 5000000
+ 24373 multiletter control sequences out of 15000+600000
+ 560037 words of font info for 121 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 49i,10n,46p,733b,394s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{table.caption.17} has been referenced but does no
+ 49i,10n,46p,710b,324s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{table.caption.28} has been referenced but does no
 t exist, replaced by a fixed one
 
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/
 texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fo
 nts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/t
-imes/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pf
-b>
-Output written on acl_latex.pdf (4 pages, 409005 bytes).
+imes/utmr8a.pfb>
+Output written on acl_latex.pdf (4 pages, 442746 bytes).
 PDF statistics:
- 156 PDF objects out of 1000 (max. 8388607)
- 138 compressed objects within 2 object streams
- 44 named destinations out of 1000 (max. 500000)
- 24720 words of extra memory for PDF output out of 24883 (max. 10000000)
+ 134 PDF objects out of 1000 (max. 8388607)
+ 113 compressed objects within 2 object streams
+ 48 named destinations out of 1000 (max. 500000)
+ 13922 words of extra memory for PDF output out of 14400 (max. 10000000)
 

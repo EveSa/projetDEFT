@@ -1,7 +1,6 @@
 **/.venv
-
+DEFT09_ESauvage.zip
 **/data
 **/files
-
-
+bin/__pycache__/**
 **/model

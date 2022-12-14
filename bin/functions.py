@@ -1,6 +1,7 @@
 import xml.etree.ElementTree as ET
 from tqdm import tqdm
 from yaspin import yaspin
+from os import path
 
 
 def file2data(lang, mode):
@@ -65,7 +66,7 @@ def file2data(lang, mode):
         for tag in target:
             f.write(str(tag)+'\n')
 
-    return data, target
+    return [datum.lower() for datum in data], [tag.lower() for tag in target]
 
 def get_data(lang):
     '''
@@ -85,15 +86,26 @@ def get_data(lang):
 
     test_target : list
     '''
-    with yaspin(text="getting data") as sp:
-        with open('data/deft09_parlement_appr_'+lang+'_data.lst', 'r') as f:
-            data=f.read().lower().splitlines()
-        with open('data/deft09_parlement_appr_'+lang+'_target.lst', 'r') as f:
-            target=f.read().lower().splitlines()
-        with open('data/deft09_parlement_test_'+lang+'_data.lst', 'r') as f:
-            test_data=f.read().lower().splitlines()
-        with open('data/deft09_parlement_test_'+lang+'_target.lst', 'r') as f:
-            test_target=f.read().lower().splitlines()
-        sp.ok('✔')
+    filename='data/deft09_parlement_appr_'+lang+'_data.lst'
+    if path.exists(filename):
+        with yaspin(text="getting appr data") as sp:
+            with open('data/deft09_parlement_appr_'+lang+'_data.lst', 'r') as f:
+                data=f.read().lower().splitlines()
+            with open('data/deft09_parlement_appr_'+lang+'_target.lst', 'r') as f:
+                target=f.read().lower().splitlines()
+            sp.ok('✔')
+    else:
+        data, target = file2data(lang, 'appr')
+
+    filename='data/deft09_parlement_test_'+lang+'_data.lst'
+    if path.exists(filename):
+        with yaspin(text="getting test data") as sp:
+            with open('data/deft09_parlement_test_'+lang+'_data.lst', 'r') as f:
+                test_data=f.read().lower().splitlines()
+            with open('data/deft09_parlement_test_'+lang+'_target.lst', 'r') as f:
+                test_target=f.read().lower().splitlines()
+            sp.ok('✔')
+    else : 
+        test_data, test_target = file2data(lang, 'test')
     
     return data, target, test_data, test_target

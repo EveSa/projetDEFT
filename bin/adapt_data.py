@@ -6,6 +6,9 @@ import re
 from os import path
 import pandas as pd
 
+'''
+    module de transformation des données textuelles
+'''
 
 def tfidfVectorize(X_train, X_test):
     vectorizer = TfidfVectorizer(
@@ -63,7 +66,7 @@ def balance_data(data, target, size=None):
     pse = df[df.target=='pse']
     verts_ale = df[df.target=='verts-ale']
     if size == None:
-        size = max([len(eldr), len(gue_ngl), len(ppe_de), len(pse), len(verts_ale)])
+        size = min([len(eldr), len(gue_ngl), len(ppe_de), len(pse), len(verts_ale)])
 
     eldr_resampled = resample(eldr, replace=True, n_samples=size, random_state=123)
     gue_ngl_resampled = resample(gue_ngl, replace=True, n_samples=size, random_state=123)
