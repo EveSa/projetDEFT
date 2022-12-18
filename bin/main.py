@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 from functions import *
-from predict import *
+from predict import Model
 from metrics import *
 from adapt_data import *
 import time
@@ -10,6 +10,7 @@ import time
 lang = 'it'
 name = ''
 max_depth = 10
+model_name='random_forest'
 ######################################################
 
 print("Testing for "+name+" setting \n")
@@ -38,7 +39,8 @@ data, test_data = tfidfVectorize(data, test_data)
 
 ### On entraîne le modèle en retenant le temps d'entraînement ###
 start = time.time()
-pred_target, classes = random_forest(name, lang, data, target, test_data)
+model=Model(model_name, name, lang, data, target, test_data)
+pred_target, classes = model(model_name, name, lang, data, target, test_data)
 end = time.time()
 ##################################################################
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.11.10)  14 DEC 2022 11:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.11.10)  17 DEC 2022 11:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -500,11 +500,7 @@ Underfull \hbox (badness 1189) in paragraph at lines 200--201
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [3 <../images/matriceConfusionTreeBalanced.png>]
-
-LaTeX Warning: Reference `tab:randomForestit' on page 4 undefined on input line
- 240.
-
-<../images/matriceConfusionrandomforesten.png, id=93, 462.528pt x 346.896pt>
+<../images/matriceConfusionrandomforesten.png, id=94, 462.528pt x 346.896pt>
 File: ../images/matriceConfusionrandomforesten.png Graphic file (type png)
 <use ../images/matriceConfusionrandomforesten.png>
 Package pdftex.def Info: ../images/matriceConfusionrandomforesten.png  used on 
@@ -518,7 +514,7 @@ Overfull \hbox (8.53592pt too wide) in paragraph at lines 264--265
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<../images/matriceConfusionrandomForestit.png, id=94, 462.528pt x 346.896pt>
+<../images/matriceConfusionrandomForestit.png, id=95, 462.528pt x 346.896pt>
 File: ../images/matriceConfusionrandomForestit.png Graphic file (type png)
 <use ../images/matriceConfusionrandomForestit.png>
 Package pdftex.def Info: ../images/matriceConfusionrandomForestit.png  used on 
@@ -541,34 +537,24 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 300.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 300.
 Package rerunfilecheck Info: File `acl_latex.out' has not changed.
 (rerunfilecheck)             Checksum: B84D11FCBDFB6FC847E3101CCEE50240;611.
-
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 300.
  ) 
 Here is how much of TeX's memory you used:
- 9649 strings out of 483140
- 152275 string characters out of 5965150
- 453208 words of memory out of 5000000
+ 9651 strings out of 483140
+ 152286 string characters out of 5965150
+ 453306 words of memory out of 5000000
  24373 multiletter control sequences out of 15000+600000
- 560037 words of font info for 121 fonts, out of 8000000 for 9000
+ 560167 words of font info for 123 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 49i,10n,46p,710b,324s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{table.caption.28} has been referenced but does no
-t exist, replaced by a fixed one
-
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/
-texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fo
-nts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/t
-imes/utmr8a.pfb>
-Output written on acl_latex.pdf (4 pages, 442746 bytes).
+ 49i,10n,46p,751b,324s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
+e/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw
+/times/utmr8a.pfb>
+Output written on acl_latex.pdf (4 pages, 442206 bytes).
 PDF statistics:
  134 PDF objects out of 1000 (max. 8388607)
  113 compressed objects within 2 object streams
- 48 named destinations out of 1000 (max. 500000)
+ 47 named destinations out of 1000 (max. 500000)
  13922 words of extra memory for PDF output out of 14400 (max. 10000000)
 

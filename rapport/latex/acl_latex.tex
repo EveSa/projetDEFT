@@ -113,7 +113,7 @@ Nous decidons d'entraîner le modèle sur la totalité des données d'entraînem
 \subparagraph{}
 Dans un premier temps, nous realiserons la vectorisation du texte à l'aide du TF-IDF proposé par la bibliothèque \texttt{scikit-learn} sans lemmatisation du texte d'origine. Nous réviserons cette approche au vu des résultats.
 \subparagraph{}
-Tous les modèles utilisés sont issus de cette même bibliothèque et adapté au besoin de la tâche visée.
+Tous les modèles utilisés sont issus de cette même bibliothèque et adaptés au besoin de la tâche visée.
 
 \section{Résultats}
 
@@ -155,12 +155,12 @@ weighted avg & 0.74 & 0.74 & 0.74\\
 \end{figure}
 
 \subparagraph{}
-Ce premier modèle confirme notre hypthèse d'amélioration notable des résultats comparé aux soumissions de Forest et al. en 2009. Toutefois, il semble, en visualisant l'arbre de décision obtenu, que le modèle surapprend les données fournies. Ce surapprentissage est lié à l'absence de restriction de profondeur ainsi qu'à la multiplicité des paramètres entaîné par l'utilisation d'un TF-IDF pour la vectorisation des données. Il est donc pertinent de réduire le nombre de paramètres pour utiliser pleinement le potentiel de visualisation du modèle.
+Ce premier modèle confirme notre hypthèse d'amélioration notable des résultats comparés aux soumissions de Forest et al. en 2009. Toutefois, il semble, en visualisant l'arbre de décision obtenu, que le modèle surapprend les données fournies. Ce surapprentissage est lié à l'absence de restriction de profondeur ainsi qu'à la multiplicité des paramètres entaîné par l'utilisation d'un TF-IDF pour la vectorisation des données. Il est donc pertinent de réduire le nombre de paramètres pour utiliser pleinement le potentiel de visualisation du modèle.
 \subsubsection{lemmatisation et suppression des mots stops}
 Nous supposons que la suppression de la ponctuation ainsi que sa lemmatisation et la suppression des mots stops amélioreront la profondeur du modèle d'arbre de décision. Toutefois, les expériences montrent que les résultats se détériorent et que la profondeur augmente. 
 \subsubsection{Réequilibrage des données}
 \subparagraph{}
-On essaie également de réequilibrer les données d'entrainement afin de supprimer le biais du modèle mais si la précision et le rappel s'améliorent dans les classes minoritaires, les très mauvais résultats dans les classes réequilibrées nous invite à conserver le biais de départ afin de conserver une f-mesure acceptable. Les mauvais résultats dans les classes majoritaires persistent lorsque l'on rééquilibre également les données de tests. En revanche, le rééquilibrage des données permet d'effectivement diminuer la profondeur de l'arbre en utilisant un rééquilibrage par downsampling en passant d'un profondeur de 146 à une prodondeur de 96.
+On essaie également de réequilibrer les données d'entrainement afin de supprimer le biais du modèle mais si la précision et le rappel s'améliorent dans les classes minoritaires, les très mauvais résultats dans les classes réequilibrées, c'est à dire les classes majoritaires, nous invite à conserver le biais de départ afin de conserver une f-mesure acceptable. Les mauvais résultats dans les classes majoritaires persistent lorsque l'on rééquilibre également les données de tests. En revanche, le rééquilibrage des données permet d'effectivement diminuer la profondeur de l'arbre en utilisant un rééquilibrage par downsampling en passant d'un profondeur de 146 à une prodondeur de 96.
 
 \begin{figure}[h]
 \includegraphics[width=0.5\textwidth]{matriceConfusionTreeBalanced}
@@ -169,7 +169,7 @@ On essaie également de réequilibrer les données d'entrainement afin de suppri
 \end{figure}
 
 \subparagraph{}
-Le upsampling permet de moins déteriorer les résultats pour les classes précédemment majoritaire et diminue de ce fait, moins le résultat général. Le modèle entraîné avec le réequilibrage en upsampling présente une f mesure moyenne de 0.65.
+Le upsampling permet de moins déteriorer les résultats pour les classes précédemment majoritaire et diminue, de ce fait, moins le résultat général. Le modèle entraîné avec le réequilibrage en upsampling présente une f mesure moyenne de 0.65.
 
 \subsection{Random Forest}
 Face à ces résultats peu fructueux, nous essayons d'autres modèles d'apprentissage en commençant par Random Forest qui devrait présenter de meilleurs résultats. En effet, le modèle Random Forest permet de combiner plusieurs arbres de décisions augmentant ainsi leur efficacité.
@@ -203,7 +203,7 @@ Dans le cas de random Forest, la simplification des données semble avoir moins 
 
 \subsection{Classifieurs Linéaire}
 \subparagraph{}
-On explore d'abord les classifieurs linéaire la la régression logistique. Ce modèle présente des résultats bien inférieur aux arbres de décisions vus précédemment sans traitement des données avec une macro f-mesure moyennne de 0,59. Les résultats s'maliorent ici avec des traitements des données comme le re-échantillonage des données avec une performance de 67\% pour notre modèle  \texttt{balanced\_upsampled\_fr.joblib}. Les résultats pour la regression logistique restent médiocre par rapport au résultats obtenus précedemments.
+On explore d'abord les classifieurs linéaire la la régression logistique. Ce modèle présente des résultats bien inférieur aux arbres de décisions vus précédemment sans traitement des données avec une macro f-mesure moyennne de 0,59. Les résultats s'maliorent ici avec des traitements des données comme le re-échantillonage des données avec une performance de 67\% pour notre modèle  \texttt{balanced\_upsampled\_fr.joblib}. Les résultats pour la regression logistique restent médiocre par rapport aux résultats obtenus précedemments.
 \subparagraph{}
 Avec un modèle de Classification par Support de Vecteur linéaire, on arrive à augmenter le score de la f-mesure de 1\% par rapport à un modèle de RandomForest. Un entraînement sur un SVM autre que linéaire implique une réduction importante des données d'entraînement du fait de la compléxité quadratique du nombre d'exemples. Or la diminution du nombre d'exemple proposé en apprentissage diminue considérablement les performances du modèle. Nous décidons donc de ne pas exploiter les SVM à coeur non-linéaire.
 \subparagraph{}
@@ -237,7 +237,7 @@ weighted avg &  0.77 & 0.77  &  0.77  \\
 \subparagraph{}
 Comme attendu les avancées en classification des 10 dernières années permettent d'obtenir des bien meilleurs résultats que l'équipe de Forest en 2009 avec des modèles génériques. Toutefois, la difficulté de la tâche reste tangible avec un plafond de performance en dessous des 80\% pour notre application.
 \subparagraph{}
-Le meilleur modèle obtenus par nos expériences et le modèle de RandomForest. Les résultats avec ce modèle sur l'anglais sont encourageants comme le montre la Table~\ref{tab:randomForesten}. Nous appliquons également le modèle sur le corpus italien et obtenons des résultats similaires comme présentés dans la Table~\ref{tab:randomForestit}.
+Le meilleur modèle obtenus par nos expériences est le modèle de RandomForest. Les résultats avec ce modèle sur l'anglais sont encourageants comme le montre la Table~\ref{tab:randomForesten}. Nous appliquons également le modèle sur le corpus italien et obtenons des résultats similaires comme présentés dans la Table~\ref{tab:randomForestit}.
 
 \begin{table}[h]
 \centering
